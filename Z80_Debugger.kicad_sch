@@ -4,6 +4,9 @@
 	(generator_version "10.0")
 	(uuid "1dee2e6f-8929-455d-a1de-5fd790cf69ac")
 	(paper "A4")
+	(title_block
+		(title "Z80 Debugger Rev1.1")
+	)
 	(lib_symbols
 		(symbol "74xx:74AHC273"
 			(exclude_from_sim no)
@@ -5356,6 +5359,17 @@
 		)
 		(uuid "0204171c-ed35-460d-89d6-08c9cdbc06b9")
 	)
+	(text "Bit-bang SPI :\nRA2 -> MOSI \nRA3 -> MISO"
+		(exclude_from_sim no)
+		(at 267.97 156.718 0)
+		(effects
+			(font
+				(size 0.762 0.762)
+			)
+			(justify left)
+		)
+		(uuid "07ff37dc-5e57-4e0d-b300-73174118eec0")
+	)
 	(text "Need to Pull-Up HIGH.\nTo signal the Z80 \nwhen an SD card \nread finishes."
 		(exclude_from_sim no)
 		(at 54.864 134.874 0)
@@ -6014,16 +6028,6 @@
 			(type default)
 		)
 		(uuid "29acfa97-f4b3-45fb-9eac-1d856076ec8b")
-	)
-	(wire
-		(pts
-			(xy 252.73 152.4) (xy 260.35 152.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2cc9a2e4-cf99-4a3a-be01-c46d6fc91b81")
 	)
 	(wire
 		(pts
@@ -6707,6 +6711,16 @@
 	)
 	(wire
 		(pts
+			(xy 252.73 152.4) (xy 260.35 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8aac8dc0-7b33-405c-834e-d052c07b743a")
+	)
+	(wire
+		(pts
 			(xy 189.23 76.2) (xy 201.93 76.2)
 		)
 		(stroke
@@ -6964,16 +6978,6 @@
 			(type default)
 		)
 		(uuid "ad620ddf-ba31-4197-9cb0-d99a97722060")
-	)
-	(wire
-		(pts
-			(xy 252.73 149.86) (xy 260.35 149.86)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ad7be01a-34e1-4e94-bc90-0d7eaacb966d")
 	)
 	(wire
 		(pts
@@ -7807,6 +7811,16 @@
 	)
 	(wire
 		(pts
+			(xy 252.73 149.86) (xy 260.35 149.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f7af94b8-84d6-4ca7-b90c-c492d861a5c6")
+	)
+	(wire
+		(pts
 			(xy 160.02 99.06) (xy 171.45 99.06)
 		)
 		(stroke
@@ -7874,6 +7888,16 @@
 			(justify right bottom)
 		)
 		(uuid "02c2ed40-8cfa-4967-9a06-975e5c5587f4")
+	)
+	(label "MOSI"
+		(at 252.73 149.86 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "02ce0789-d719-442b-847b-d480e55fc1ca")
 	)
 	(label "GND"
 		(at 252.73 157.48 0)
@@ -8125,6 +8149,16 @@
 		)
 		(uuid "2051fa97-8b89-440c-b7ea-42a900b626dc")
 	)
+	(label "MOSI"
+		(at 189.23 48.26 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "23314b8f-0c05-4c48-9e74-01d54756461c")
+	)
 	(label "IORQ"
 		(at 24.13 166.37 0)
 		(effects
@@ -8195,6 +8229,16 @@
 		)
 		(uuid "2dcee65b-4ca6-4d89-bf3a-350e2de824fb")
 	)
+	(label "MISO"
+		(at 189.23 50.8 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "33e2ab31-1644-4631-8f98-0c06dfefc58f")
+	)
 	(label "A15"
 		(at 85.09 67.31 0)
 		(effects
@@ -8204,16 +8248,6 @@
 			(justify left bottom)
 		)
 		(uuid "3845c332-b970-4b9c-a3a4-9e163ffa22fb")
-	)
-	(label "SDO"
-		(at 189.23 50.8 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "3b15c748-1a6c-4149-bbe2-663ff05c6f31")
 	)
 	(label "WR"
 		(at 189.23 35.56 0)
@@ -8285,16 +8319,6 @@
 		)
 		(uuid "44a672f7-12aa-4343-a978-8677537b835f")
 	)
-	(label "SDO"
-		(at 252.73 152.4 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "49042060-5b1a-4c3e-ab58-ef74c6205192")
-	)
 	(label "GND"
 		(at 229.87 137.16 0)
 		(effects
@@ -8364,16 +8388,6 @@
 			(justify left bottom)
 		)
 		(uuid "559b8cec-0537-4483-a778-cd9e39e513d5")
-	)
-	(label "SDI"
-		(at 252.73 149.86 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "56af939a-9ad1-4f31-bd5a-b81094b42351")
 	)
 	(label "A2"
 		(at 74.93 34.29 180)
@@ -8455,16 +8469,6 @@
 		)
 		(uuid "5d76045d-e357-4221-8e47-cdd3ccdcd2df")
 	)
-	(label "SDI"
-		(at 189.23 48.26 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "5f2cd1ae-fc4d-4544-86b5-7312dc121c26")
-	)
 	(label "PGC"
 		(at 189.23 81.28 0)
 		(effects
@@ -8544,6 +8548,16 @@
 			(justify right bottom)
 		)
 		(uuid "687c67d5-2a89-4ca0-89e9-678d061936b4")
+	)
+	(label "MISO"
+		(at 252.73 152.4 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "6afb40b4-748a-40ad-84ca-29007abda527")
 	)
 	(label "D0"
 		(at 128.27 29.21 180)

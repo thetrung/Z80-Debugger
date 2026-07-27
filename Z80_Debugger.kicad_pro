@@ -231,7 +231,7 @@
         }
       },
       "via_dimensions": [],
-      "zones_allow_external_fillets": true
+      "zones_allow_external_fillets": false
     },
     "ipc2581": {
       "bom_rev": "",
@@ -648,7 +648,7 @@
         "uuid": "1dee2e6f-8929-455d-a1de-5fd790cf69ac"
       }
     ],
-    "used_designators": "R5,R7-8,#PWR24-28",
+    "used_designators": "",
     "variants": []
   },
   "sheets": [
