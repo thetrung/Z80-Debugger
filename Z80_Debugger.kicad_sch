@@ -2503,135 +2503,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Connector_Generic:Conn_01x01"
-			(pin_names
-				(offset 1.016)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "J"
-				(at 0 2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "Conn_01x01"
-				(at 0 -2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "connector"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "Connector*:*_1x??_*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "Conn_01x01_1_1"
-				(rectangle
-					(start -1.27 1.27)
-					(end 1.27 -1.27)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(rectangle
-					(start -1.27 0.127)
-					(end 0 -0.127)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin passive line
-					(at -5.08 0 0)
-					(length 3.81)
-					(name "Pin_1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Connector_Generic:Conn_01x04"
 			(pin_names
 				(offset 1.016)
@@ -5644,6 +5515,17 @@
 		)
 		(uuid "9a7a7e4a-cf48-469d-82bd-03c60686ea0f")
 	)
+	(text "Wait M1 + IORQ = LOW\nAnd RD + WR = HIGH\nTo Z80 Request."
+		(exclude_from_sim no)
+		(at 214.63 48.006 0)
+		(effects
+			(font
+				(size 0.635 0.635)
+			)
+			(justify left)
+		)
+		(uuid "a33c3c4e-abbf-48b2-b2d7-0fb504080f8b")
+	)
 	(text "Need Pull-UP HIGH : \nPrevents Z80 glitching during \nPIC power-on boot phase."
 		(exclude_from_sim no)
 		(at 16.51 136.398 0)
@@ -5687,17 +5569,6 @@
 			(justify left)
 		)
 		(uuid "c7955b38-baef-4a1d-96fb-a611124b4af5")
-	)
-	(text "Let anything observe \nCPU Instruction Fetch "
-		(exclude_from_sim no)
-		(at 16.256 105.918 0)
-		(effects
-			(font
-				(size 0.635 0.635)
-			)
-			(justify left)
-		)
-		(uuid "d60e6663-c7af-4ff0-8246-10db9a4a58d2")
 	)
 	(text "Tells SRAM to lock in data from the bus during a write cycle."
 		(exclude_from_sim no)
@@ -5878,6 +5749,10 @@
 		(uuid "28479b82-cbcb-453e-a676-69cfb4241a85")
 	)
 	(no_connect
+		(at 44.45 170.18)
+		(uuid "32533d49-5f05-4f78-b2cc-9e0577cb28dc")
+	)
+	(no_connect
 		(at 179.07 114.3)
 		(uuid "3413279c-64ad-4151-bb9d-8e4b48cdfbeb")
 	)
@@ -5904,6 +5779,10 @@
 	(no_connect
 		(at 241.3 124.46)
 		(uuid "9cdc018c-905e-4327-9df2-33b223e88bb6")
+	)
+	(no_connect
+		(at 44.45 167.64)
+		(uuid "a4163202-4585-4950-888a-933570acc824")
 	)
 	(no_connect
 		(at 179.07 124.46)
@@ -5991,7 +5870,7 @@
 	)
 	(wire
 		(pts
-			(xy 222.25 50.8) (xy 240.03 50.8)
+			(xy 227.33 50.8) (xy 240.03 50.8)
 		)
 		(stroke
 			(width 0)
@@ -6761,6 +6640,16 @@
 	)
 	(wire
 		(pts
+			(xy 227.33 55.88) (xy 240.03 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "553346db-d265-4b0e-a2dc-2c64d548b839")
+	)
+	(wire
+		(pts
 			(xy 109.22 106.68) (xy 119.38 106.68)
 		)
 		(stroke
@@ -6848,16 +6737,6 @@
 			(type default)
 		)
 		(uuid "5c616f33-780b-46b7-9478-1f7354f02b8a")
-	)
-	(wire
-		(pts
-			(xy 222.25 55.88) (xy 240.03 55.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5d6fe953-0524-4d1e-b13b-9154496e91b6")
 	)
 	(wire
 		(pts
@@ -6988,16 +6867,6 @@
 			(type default)
 		)
 		(uuid "6bd75764-e4d1-4290-b540-1074586dd5f4")
-	)
-	(wire
-		(pts
-			(xy 44.45 170.18) (xy 55.88 170.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6c8101f9-008c-4ae0-8f38-b4c55270e1d9")
 	)
 	(wire
 		(pts
@@ -7338,16 +7207,6 @@
 			(type default)
 		)
 		(uuid "8e007cbd-d899-42c2-b438-4f29571cf6c4")
-	)
-	(wire
-		(pts
-			(xy 44.45 167.64) (xy 55.88 167.64)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8f8dfe64-cfc9-4442-88a6-e46b05139c96")
 	)
 	(wire
 		(pts
@@ -7861,7 +7720,7 @@
 	)
 	(wire
 		(pts
-			(xy 222.25 53.34) (xy 240.03 53.34)
+			(xy 227.33 53.34) (xy 240.03 53.34)
 		)
 		(stroke
 			(width 0)
@@ -8031,7 +7890,7 @@
 	)
 	(wire
 		(pts
-			(xy 222.25 48.26) (xy 240.03 48.26)
+			(xy 227.33 48.26) (xy 240.03 48.26)
 		)
 		(stroke
 			(width 0)
@@ -8188,16 +8047,6 @@
 			(type default)
 		)
 		(uuid "dbbf1a9a-f23a-4e2a-9bcc-36fb6fc66652")
-	)
-	(wire
-		(pts
-			(xy 16.51 104.14) (xy 30.48 104.14)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dc3f5e5a-4341-4501-b64d-7525e466f17c")
 	)
 	(wire
 		(pts
@@ -8739,6 +8588,16 @@
 		)
 		(uuid "1544ef8a-64d9-4e9f-a356-b351035a3a67")
 	)
+	(label "0x82"
+		(at 219.71 39.37 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1649c08c-042e-4834-a3ee-2eb1618d0fd8")
+	)
 	(label "SCK"
 		(at 281.94 55.88 180)
 		(effects
@@ -9029,16 +8888,6 @@
 		)
 		(uuid "3b288949-1186-4c52-9f55-1d032036bc61")
 	)
-	(label "WR"
-		(at 227.33 35.56 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "3b44d10a-a974-4818-8a09-db223ce1b0b3")
-	)
 	(label "A3"
 		(at 74.93 36.83 180)
 		(effects
@@ -9118,6 +8967,16 @@
 			(justify left bottom)
 		)
 		(uuid "49f78872-1fd0-4b24-9983-0dcbd56152f3")
+	)
+	(label "RD"
+		(at 227.33 50.8 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "4d0a047a-620d-4f51-8984-46546ee17535")
 	)
 	(label "A16"
 		(at 125.73 154.94 180)
@@ -9569,16 +9428,6 @@
 		)
 		(uuid "853e1d00-989e-4b66-81aa-71d16489d5f6")
 	)
-	(label "M1"
-		(at 16.51 104.14 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "87ab6bfa-2117-4bc6-a235-82c4309e0238")
-	)
 	(label "WAIT"
 		(at 25.4 54.61 0)
 		(effects
@@ -9739,6 +9588,16 @@
 		)
 		(uuid "9ce74c5a-8ff2-4220-9c30-ccd0986ef530")
 	)
+	(label "IORQ"
+		(at 227.33 55.88 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9da143b3-04d4-456a-b677-a31d224d2287")
+	)
 	(label "WR"
 		(at 17.78 175.26 0)
 		(effects
@@ -9748,16 +9607,6 @@
 			(justify left bottom)
 		)
 		(uuid "9f3dc26a-84d5-4f59-9698-ccb99db30075")
-	)
-	(label "0x84"
-		(at 222.25 55.88 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "9fbdbe6f-a9ce-4d99-8282-ae91aee3815b")
 	)
 	(label "BUSREQ"
 		(at 227.33 68.58 0)
@@ -9819,16 +9668,6 @@
 		)
 		(uuid "a68d5215-79ec-46b5-b6fd-9234b169159c")
 	)
-	(label "0x83"
-		(at 222.25 53.34 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "a743283e-5c8c-49f3-8ebb-b72ac6959475")
-	)
 	(label "PGD"
 		(at 256.54 132.08 0)
 		(effects
@@ -9888,6 +9727,26 @@
 			(justify right bottom)
 		)
 		(uuid "b7310a87-094e-4dd2-b629-d0f971ba3dc6")
+	)
+	(label "WR"
+		(at 227.33 53.34 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b8198213-d61e-4250-8661-66607c5f8c25")
+	)
+	(label "0x81"
+		(at 227.33 35.56 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b94feaa3-2c0d-4794-b0fe-2a27c6d1e41b")
 	)
 	(label "MCLR"
 		(at 256.54 124.46 0)
@@ -9959,26 +9818,6 @@
 		)
 		(uuid "bbc1641e-e623-4fa1-8ee7-b177a43b10c4")
 	)
-	(label "0x82"
-		(at 222.25 50.8 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "bc225cf8-4853-4b02-94f8-d9da189055d0")
-	)
-	(label "0x84"
-		(at 55.88 170.18 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "bdb817a0-0061-4b9d-97af-d258bed89e8e")
-	)
 	(label "A14"
 		(at 74.93 64.77 180)
 		(effects
@@ -9998,6 +9837,16 @@
 			(justify left bottom)
 		)
 		(uuid "bf5bf02e-c1d4-4af2-a406-f90f703811b8")
+	)
+	(label "M1"
+		(at 227.33 48.26 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c5a566da-64ee-452a-9b42-c0d5d976fb9b")
 	)
 	(label "A15"
 		(at 74.93 67.31 180)
@@ -10038,16 +9887,6 @@
 			(justify right bottom)
 		)
 		(uuid "ca6d5e1a-c54c-4fe0-9cd5-596168299bbf")
-	)
-	(label "0x83"
-		(at 55.88 167.64 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "cb9b4158-d7ea-44a1-9b89-bd589cd56bf1")
 	)
 	(label "RESET"
 		(at 80.01 180.34 0)
@@ -10288,16 +10127,6 @@
 			(justify right bottom)
 		)
 		(uuid "f8d99b01-9b6b-4a41-a354-2196d68ce172")
-	)
-	(label "0x81"
-		(at 222.25 48.26 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "f8e89069-831c-41af-b006-e74cac4eaf35")
 	)
 	(label "VCC"
 		(at 234.95 153.67 0)
@@ -12905,85 +12734,6 @@
 			(project "Z80_Debugger"
 				(path "/1dee2e6f-8929-455d-a1de-5fd790cf69ac"
 					(reference "C12")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector_Generic:Conn_01x01")
-		(at 35.56 104.14 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "85cec499-a0cf-4d7a-aa5f-f09f5fc7820b")
-		(property "Reference" "J6"
-			(at 38.1 102.8699 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "M1_O"
-			(at 38.1 105.4099 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical"
-			(at 35.56 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 35.56 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 35.56 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "e4892355-35e5-4ad5-ac53-b1f864caabc3")
-		)
-		(instances
-			(project "Z80_Debugger"
-				(path "/1dee2e6f-8929-455d-a1de-5fd790cf69ac"
-					(reference "J6")
 					(unit 1)
 				)
 			)
